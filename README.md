@@ -56,7 +56,7 @@ ARM_CLIENT_ID : "<appId>"
 ```
 
 ### What you get!
-A standalone vault instance that can be either OSS (default) or Enterprise to demonstrate dynamic user credentials and trasit data encryption as a service 
+A standalone vault instance that can be either OSS (default) or Enterprise to demonstrate dynamic user credentials and transit data encryption as a service 
 
 ### Vault
 
