@@ -31,7 +31,7 @@ set {
 
 set {
     name = "server.image.tag"
-    value = "latest"
+    value = "1.7.3"
   }
 
   set {
