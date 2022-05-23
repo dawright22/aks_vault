@@ -24,8 +24,7 @@ resource "azurerm_kubernetes_cluster" "default" {
     client_id     = var.appId
     client_secret = var.password
   }
-
-  role_based_access_control {
+  role_based_access_control_enabled {
     enabled = true
   }
 
