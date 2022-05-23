@@ -24,9 +24,6 @@ resource "azurerm_kubernetes_cluster" "default" {
     client_id     = var.appId
     client_secret = var.password
   }
-  role_based_access_control_enabled {
-    enabled = true
-  }
 
   tags = {
     environment = "terraform-multi-cloud-k8-demo"
