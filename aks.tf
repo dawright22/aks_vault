@@ -30,7 +30,7 @@ resource "azurerm_kubernetes_cluster" "default" {
   }
   lifecycle {
     postcondition {
-      condition     = self.default_node_pool[*].vm_size == "Standard_D2_v2"
+      condition     = self.default_node_pool.0.vm_size == "Standard_D2_v2"
       error_message = "Instance must be Standard_D2_v2"
     }
   }
