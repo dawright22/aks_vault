@@ -28,6 +28,12 @@ resource "azurerm_kubernetes_cluster" "default" {
   tags = {
     environment = "terraform-multi-cloud-k8-demo"
   }
+  lifecycle {
+    postcondition {
+      condition     = self.vm_size == "Standard_D2_v2"
+      error_message = "Non Compliant image selected"
+    }
+  }
 }
 
 
