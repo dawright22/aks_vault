@@ -30,7 +30,7 @@ resource "azurerm_kubernetes_cluster" "default" {
   }
   lifecycle {
     postcondition {
-      condition     = self.vm_size == "Standard_D2_v2"
+      condition     = self.agent_pool_profile.vm_size == "Standard_D2_v2"
       error_message = "Non Compliant image selected"
     }
   }
