@@ -28,12 +28,6 @@ resource "azurerm_kubernetes_cluster" "default" {
   tags = {
     environment = "terraform-multi-cloud-k8-demo"
   }
-  lifecycle {
-    postcondition {
-      condition     = self.default_node_pool.0.vm_size == "Standard_D2_v2"
-      error_message = "Instance must be Standard_D2_v2"
-    }
-  }
 }
 
 
